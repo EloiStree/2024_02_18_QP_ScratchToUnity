@@ -1,0 +1,480 @@
+{
+    "name": "CarDroneInput Example",
+    "maps": [
+        {
+            "name": "CarDroneAction",
+            "id": "fb2d99a7-483f-4780-a6ad-41b253bf4e6e",
+            "actions": [
+                {
+                    "name": "DroneLeft2RightRotation",
+                    "type": "Value",
+                    "id": "132466cc-fb8f-4fed-a333-e2e61aeb52db",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "DroneDown2UpMove",
+                    "type": "Value",
+                    "id": "9605c96a-fe11-40b8-a96f-92100e14a43c",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "DroneLeft2RightMove",
+                    "type": "Value",
+                    "id": "f8d33194-a524-4cb3-aa60-4d08c87db89e",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "DroneBack2FrontMove",
+                    "type": "Value",
+                    "id": "237ee798-840b-4ffc-a212-b343873b221e",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "CarLeftFront",
+                    "type": "Button",
+                    "id": "c475bdf2-9b8b-4798-ad4c-d90dc63d050c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CarRightFront",
+                    "type": "Button",
+                    "id": "cb85bd6a-5a31-40f0-8afe-a2df7956e6ac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CarLeftBack",
+                    "type": "Button",
+                    "id": "03657931-a21f-430f-b2f7-5e5db3d81ffb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CarRightBack",
+                    "type": "Button",
+                    "id": "6b3bfcd7-fe55-4bdb-8789-497f49ce5855",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Action",
+                    "type": "Button",
+                    "id": "92de86fb-5ac1-40a9-9f4d-05c2fac27bee",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "63f920d8-1c80-462e-bf25-361b13b68011",
+                    "path": "<Gamepad>/leftStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneLeft2RightRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65fa3267-e288-4ab4-859f-4e123cfb0d72",
+                    "path": "<XInputController>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneLeft2RightRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "62277524-c758-405e-840b-53974c54b53d",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneLeft2RightRotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "e3e4ccb2-b770-446f-a01e-9bc901d39357",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneLeft2RightRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "37a33526-10b9-4e2d-b4a3-8ea3f3fd8d86",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneLeft2RightRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "5c29e3dd-e9b3-481d-b4d4-cba3992eb7aa",
+                    "path": "<Gamepad>/leftStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneDown2UpMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "391a93a5-de21-46ec-a5e9-0a104df638a4",
+                    "path": "<XInputController>/leftStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneDown2UpMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "1245656e-f6ac-49cb-bb6f-34b170124995",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneDown2UpMove",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "8cd9d4c9-08cd-4650-a9ac-f838f29447db",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneDown2UpMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "0987268c-c1d9-4de4-9eda-f1bcda3fd5bf",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneDown2UpMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "e677db55-f1db-436a-b054-d07dc26bdb8e",
+                    "path": "<Gamepad>/rightStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneLeft2RightMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f3a62d31-d91c-4582-8bde-2b79285de8b8",
+                    "path": "<XInputController>/rightStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneLeft2RightMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "3e19fa8a-dedd-41d3-90f0-1f8d4de79095",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneLeft2RightMove",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "23c268a7-91b1-4539-a91f-9fae81e8da8a",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneLeft2RightMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "8df413d2-6da9-478b-9057-667d81b5cfba",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneLeft2RightMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "40ae94b7-d270-4ced-87c3-141708aadf96",
+                    "path": "<Gamepad>/rightStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneBack2FrontMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a4a86b84-5fa5-4d9c-951e-26a940900590",
+                    "path": "<XInputController>/rightStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneBack2FrontMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "6c0ca3bd-1abc-46ed-97e1-720ec10ba90b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneBack2FrontMove",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "515aaac7-da4d-452f-bdf7-0b74330a43fd",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneBack2FrontMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "ef52225b-f96e-4941-8a40-4f107fe9520c",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DroneBack2FrontMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "549a229d-d22a-4135-846f-fa2da5ad089e",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarLeftFront",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6a69eb26-d8d7-4548-864a-6d918f56d7f5",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarLeftFront",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ae06d9be-bfea-43b7-8a1f-e2781f5f1f8b",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick  >/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarLeftFront",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "34c48ac1-3c97-4287-a51a-e90eadab2f49",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarRightFront",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "902fef1d-9b7e-4dd6-8184-f242c48da110",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarRightFront",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f9e27c71-bdeb-4544-a167-10c5b7d09ed7",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick  >/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarRightFront",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "804e70c3-5751-4c60-be0a-2cc4cbc1a0cb",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarLeftBack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "60e25c10-6aa3-4d59-b585-07d969f085ec",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarLeftBack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "105fbe0a-622b-4b0a-bbe9-af7cca625caa",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick  >/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarLeftBack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e2c81885-5b47-4d85-b52e-c493b695d7c7",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarRightBack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "13988d97-2726-4934-98f5-495670f8d8a5",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarRightBack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b8c4d4ec-b806-40be-a6b3-ed91907b4a18",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick  >/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarRightBack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "35a0f8f1-5aad-4c09-b479-083cec70e8c5",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6d99b074-647a-4ef3-a950-3b5c172c031a",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46eb131a-1c91-4250-8c6b-034f2e7c1db2",
+                    "path": "<XInputController>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

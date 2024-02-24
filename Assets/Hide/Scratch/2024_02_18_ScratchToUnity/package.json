@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.eloistree.scratch2unity",                              
+  "displayName": "Scratch 2 Unity",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Attempt to mirror Scratch logic and architecture in Unity3D in aim to ease the communication between both and ease the transition from Scratch to Unity with students.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2024_02_18_ScratchToUnity.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 

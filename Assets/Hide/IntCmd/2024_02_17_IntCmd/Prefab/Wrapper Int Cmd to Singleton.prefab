@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1945401992670876912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9014316407307317188}
+  - component: {fileID: 6322900901528482125}
+  - component: {fileID: 2196670489941430568}
+  - component: {fileID: 4413332212826968304}
+  - component: {fileID: 4248320732048753877}
+  m_Layer: 0
+  m_Name: Wrapper Int Cmd to Singleton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9014316407307317188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945401992670876912}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6322900901528482125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945401992670876912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6e58df365d28a44af009b15fc4cb90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2196670489941430568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945401992670876912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3aa5f576a943584fae51b3715b8b539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_intCmdValue:
+    m_intCmdValue: 0
+--- !u!114 &4413332212826968304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945401992670876912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 572c5583a41fd554b861bf6d0d44750f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_value: {fileID: 2196670489941430568}
+  m_onValueReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6322900901528482125}
+        m_TargetAssemblyTypeName: AbstractIntCmdHolderMono, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4248320732048753877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945401992670876912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 260e214c103f3e444a2971a6072c4011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_intCmd: {fileID: 4413332212826968304}
+  m_refreshButton: 1
+  m_int: 0
+  m_decimal: 0
+  m_binary: 00000000000000000000000000000000
+  m_binarySplitByByte: 0 00000000 00000000 00000000 0000000
+  m_structure: '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 '
+  littleEndianBytes: 00000000
+  littleEndianBytesAsString: 00 00 00 00
+  bigEndianBytes: 00000000
+  bigEndianBytesAsString: 00 00 00 00

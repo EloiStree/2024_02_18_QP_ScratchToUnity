@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4942591664557435545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3593059385816267878}
+  - component: {fileID: 359918440111950222}
+  m_Layer: 0
+  m_Name: Keys String To Input InTCmd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3593059385816267878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4942591664557435545}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.08195543, y: 1.0228233, z: -0.18635607}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &359918440111950222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4942591664557435545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f41b43b8e12d604d9db3c4d4738970a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_intCmd:
+    m_intCmdValue: 0
+  m_lockFirstDigit: 1
+  m_firstDigit: 1
+  m_keyToPercent:
+  - m_stringKey: CarDroneAction_DroneLeft2RightRotation
+    m_digit: 5
+    m_percentType: 0
+    m_inverse: 0
+  - m_stringKey: CarDroneAction_DroneDown2UpMove
+    m_digit: 6
+    m_percentType: 0
+    m_inverse: 0
+  - m_stringKey: CarDroneAction_DroneLeft2RightMove
+    m_digit: 7
+    m_percentType: 0
+    m_inverse: 0
+  - m_stringKey: CarDroneAction_DroneBack2FrontMove
+    m_digit: 8
+    m_percentType: 0
+    m_inverse: 0
+  m_keyToPercentInRange:
+  - m_stringKey: CarDroneAction_CarLeftFront
+    m_digit: 1
+    m_percentType: 1
+    m_min: 0.1
+    m_max: 1
+    m_false: 0
+    m_true: 1
+    m_inverse: 0
+    m_inclusive: 1
+  - m_stringKey: CarDroneAction_CarRightFront
+    m_digit: 2
+    m_percentType: 1
+    m_min: 0.1
+    m_max: 1
+    m_false: 0
+    m_true: 1
+    m_inverse: 0
+    m_inclusive: 1
+  - m_stringKey: CarDroneAction_CarLeftBack
+    m_digit: 3
+    m_percentType: 1
+    m_min: 0.1
+    m_max: 1
+    m_false: 0
+    m_true: 1
+    m_inverse: 0
+    m_inclusive: 1
+  - m_stringKey: CarDroneAction_CarRightBack
+    m_digit: 4
+    m_percentType: 1
+    m_min: 0.1
+    m_max: 1
+    m_false: 0
+    m_true: 1
+    m_inverse: 0
+    m_inclusive: 1
+  - m_stringKey: CarDroneAction_Action
+    m_digit: 9
+    m_percentType: 1
+    m_min: 0.1
+    m_max: 1
+    m_false: 0
+    m_true: 1
+    m_inverse: 0
+    m_inclusive: 1

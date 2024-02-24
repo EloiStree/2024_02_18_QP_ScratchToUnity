@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Hide/Workshop/300GAMINGSPACE/ListenToInput.unity
+    guid: 6c37467e284eb7a48992fb9c290a7f5f
+  - enabled: 1
+    path: Assets/_VousEtesIci/001 Avatar Parlant/Avatar Parlant.unity
+    guid: e8156e10de80a9842a8debcec83d83e8
+  - enabled: 1
+    path: Assets/_VousEtesIci/000 Hello World/000 Bonjour Start.unity
+    guid: 7f28a2d466889fd41b76d8bf418f0e58
+  - enabled: 0
+    path: Assets/Hide/Scratch/2024_02_18_ScratchToUnityWorkshops/Scene/2024FebruaryWeek4.unity
+    guid: 8ebade0bc5982c2439e54d2f9515cb3a
+  - enabled: 0
+    path: Assets/Hide/Overlayer/2024_01_22_EloiLabStreamOverlayerWindow/Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  m_configObjects: {}
