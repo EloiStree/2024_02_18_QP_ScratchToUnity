@@ -33,10 +33,24 @@ public class PushIndexIntCmdToUdpMono : MonoBehaviour
         SendUdpMessage(command.GetIndexInt(), command.GetCommandInt());
     }
 
-    public void SendUdpMessage( int intIndex, int intCmd)
+    public void SendUdpMessage(int intIndex, int intCmd)
     {
 
         SendUdpMessage(client, intIndex, intCmd);
+    }
+    public void SendUdpMessageAsTwoIntSplitBySpace(string indexIntCmd)
+    {
+        while(indexIntCmd.IndexOf("  ")>-1)
+        {
+            indexIntCmd = indexIntCmd.Replace("  ", " ");
+        }
+        string[] tokens = indexIntCmd.Trim().Split(" ");
+        if (tokens.Length == 2) {
+
+            if (int.TryParse(tokens[0], out int intIndex) && int.TryParse(tokens[1], out int intCmd)) {
+                SendUdpMessage(client, intIndex, intCmd);
+            }
+        }
     }
     public void SendUdpMessage(UdpClient client, int intIndex, int intCmd)
     {

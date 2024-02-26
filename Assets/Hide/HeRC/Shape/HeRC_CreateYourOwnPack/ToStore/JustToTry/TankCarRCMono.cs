@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankCarRCMono : MonoBehaviour
+public class TankCarRCMono
+    : MonoBehaviour
 {
 
     public Transform m_whatToMove;

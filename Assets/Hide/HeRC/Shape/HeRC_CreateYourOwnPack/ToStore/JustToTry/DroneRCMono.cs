@@ -121,4 +121,10 @@ public class DroneRCMono : MonoBehaviour
     public void SetDroneRotationRight(bool stateOfTheButtonIsOn) {
         m_makeDroneRotateRight= stateOfTheButtonIsOn; 
     }
+
+
+
+
+
+
 }

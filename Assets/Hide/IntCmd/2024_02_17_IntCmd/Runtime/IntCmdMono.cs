@@ -4,14 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class IntCmdMono : AbstractIntCmdHolderMono
+public  class IntCmdMono : AbstractIntCmdHolderMono
 {
     public IntCmd m_intCmdValue;
-
+   
     public override I_IntCmd GetChildrenIntCmd()
     {
         return m_intCmdValue;
     }
+
+    public override void NotifyChildrenValueChanged()
+    {}
 }
 
 public interface I_IntCmd: I_IntCmdGet, I_IntCmdSet
@@ -71,6 +74,55 @@ public interface I_IntCmdSetDigit
 
 public class IntCmdDigitUtility
 {
+
+
+    internal static bool IsBetweenIncluding(I_IntCmdGet target, IntCmdDigitEnum digitIndex, byte min, byte max)
+    {
+
+        GetDigitOf(target, digitIndex, out byte b);
+        return Math.Abs(b) >= min && Math.Abs(b) <= max;
+    }
+    public static bool IsNotZero(I_IntCmdGet target, IntCmdDigitEnum digitIndex)
+    {
+
+        GetDigitOf(target, digitIndex, out byte b);
+        return Math.Abs(b) != 0;
+    }
+
+    public static void GetAsPercent0To1(I_IntCmdGet target, IntCmdDigitEnum digitIndex, out float percent)
+    {
+
+        GetDigitOf(target, digitIndex, out byte b);
+
+        percent = b / 9f;
+    }
+    public static void GetAsPercent1To1(I_IntCmdGet target, IntCmdDigitEnum digitIndex, out float percent)
+    {
+
+
+        GetDigitOf(target, digitIndex, out byte b);
+        percent = ((b / 9f)-1f)*2f;
+    }
+    public static void GetAsPercent1To1In29Format(I_IntCmdGet target, IntCmdDigitEnum digitIndex, out float percent)
+    {
+
+
+        GetDigitOf(target, digitIndex, out byte b);
+        if (b == 0)
+            percent = 0;
+        else if (b == 1)
+            percent = 1;
+        else percent = ((b - 2f / 7f) - 1f) * 2f;
+    }
+    public static void GetAsPercent1To1In19Format(I_IntCmdGet target, IntCmdDigitEnum digitIndex, out float percent)
+    {
+
+        GetDigitOf(target, digitIndex, out byte b);
+        if (b == 0)
+            percent = 0;
+        else percent = ((b - 1f / 8f) - 1f) * 2f;
+    }
+
 
     public static void  GetDigitOf(I_IntCmdGet target, IntCmdDigitEnum digitIndex, out byte result)
     {
@@ -195,6 +247,7 @@ public class IntCmdDigitUtility
                 throw new Exception("Should not be over 9");
         }
     }
+
 }
 
 

@@ -27,9 +27,12 @@ public class ScratchMono_LoadImageFromTheWeb : AbstractScratchMono_LoadImageFrom
         //Not fan of that b
         StartCoroutine(DownloadImage());
     }
-    
+    public bool m_errorHappened=false;
+    public bool m_showErrorAndException;
     IEnumerator DownloadImage()
     {
+        if (string.IsNullOrWhiteSpace(m_imageUrl))
+            yield return null;
         using (UnityWebRequest www = UnityWebRequestTexture.GetTexture(m_imageUrl))
         {
             m_isDownloading = true;
@@ -38,7 +41,10 @@ public class ScratchMono_LoadImageFromTheWeb : AbstractScratchMono_LoadImageFrom
 
             if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
             {
-                Debug.LogError("Error: " + www.error);
+                if (m_showErrorAndException) { 
+                    Debug.LogError("Error: " + www.error);
+                }
+                    m_errorHappened = true;
                 PushTexture(null);
             }
             else

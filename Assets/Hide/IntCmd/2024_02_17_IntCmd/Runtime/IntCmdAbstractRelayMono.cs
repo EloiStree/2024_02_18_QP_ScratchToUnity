@@ -13,6 +13,11 @@ public class IntCmdAbstractRelayMono : AbstractIntCmdHolderMono
         return m_toRelay;
     }
 
+    public override void NotifyChildrenValueChanged()
+    {
+        RelayInteger();
+    }
+
     [ContextMenu("Relay Integer")]
     public void RelayInteger() {
 

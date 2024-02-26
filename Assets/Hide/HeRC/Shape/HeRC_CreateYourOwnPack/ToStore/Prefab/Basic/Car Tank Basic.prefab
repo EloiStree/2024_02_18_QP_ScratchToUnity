@@ -428,6 +428,125 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &1326429924027108539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8790730862941813080}
+  - component: {fileID: 1893873079017769246}
+  - component: {fileID: 8188095057197417743}
+  - component: {fileID: 1857520680243386069}
+  m_Layer: 0
+  m_Name: Color Detector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8790730862941813080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326429924027108539}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.36}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1735593542469191746}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1893873079017769246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326429924027108539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b19baa13cab969478c47d904d14ac36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_whereToCheck: {fileID: 8790730862941813080}
+  m_color: {r: 0, g: 0, b: 0, a: 0}
+  m_screenPosition:
+    m_unity: {x: 0, y: 0}
+    m_window:
+      X: 0
+      Y: 0
+  m_onUpdateColorOverTransform:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8188095057197417743}
+        m_TargetAssemblyTypeName: CST_OnExactColorDoSomething, Assembly-CSharp
+        m_MethodName: PushColorIn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8188095057197417743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326429924027108539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcac000c67f0526459617830dbf17ed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_colorToLookFor: {r: 1, g: 0, b: 0, a: 1}
+  m_otherColors:
+  - {r: 0, g: 1, b: 1, a: 0}
+  - {r: 0, g: 0, b: 1, a: 0}
+  m_onColorFound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1857520680243386069}
+        m_TargetAssemblyTypeName: CST_GoAtRandomInCameraViewUsingRaycast, Assembly-CSharp
+        m_MethodName: MoveAtRandomPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1857520680243386069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326429924027108539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f052747bed87349b5aacfb5e921db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_whatToMove: {fileID: 1735593542469191746}
+  m_cameraToUse: {fileID: 0}
+  m_allowToHit:
+    serializedVersion: 2
+    m_Bits: 64
+  m_noRaycastHitFound:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5109029393732142897
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +688,7 @@ Transform:
   - {fileID: 8653199972783008032}
   - {fileID: 8625066424370763643}
   - {fileID: 1401707467579420731}
+  - {fileID: 8790730862941813080}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8676399587145153500
@@ -585,8 +705,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_whatToMove: {fileID: 1735593542469191746}
   m_timepast: 0
-  m_carSpeedPerSecond: 0.1
-  m_rotationPerSecondAsAngle: 45
+  m_carSpeedPerSecond: 3
+  m_rotationPerSecondAsAngle: 180
   m_makeCarMoveForward: 0
   m_makeCarMoveBackward: 0
   m_makeCarRotateLeft: 0

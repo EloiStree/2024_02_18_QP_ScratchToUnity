@@ -18,12 +18,22 @@ public class IndexIntCmdUnityThreadRelayMono : MonoBehaviour{
         value.Set(intCmd);
         m_inQueue.Enqueue(value);
     }
+
+    public bool m_useCoroutineParallels=true;
     public void Update()
     {
         while (m_inQueue.Count>0) {
-            m_onReceived.Invoke(m_inQueue.Dequeue());
+            if(m_useCoroutineParallels)
+            StartCoroutine(PushOnCoroutine(m_inQueue.Dequeue()));
+            else m_onReceived.Invoke(m_inQueue.Dequeue());
         }
     }
+
+    public System.Collections.IEnumerator PushOnCoroutine(I_IndexIntCmdGet value) {
+        m_onReceived.Invoke(value);
+        yield return null;
+    }
+
     public void LogReceivedIndexIntergerCommand(I_IndexIntCmdGet command)
     {
 

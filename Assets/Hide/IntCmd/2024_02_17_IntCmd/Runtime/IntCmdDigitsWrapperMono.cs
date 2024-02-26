@@ -8,6 +8,31 @@ public class IntCmdDigitsWrapperMono : AbstractIntCmdHolderMono, I_IntCmdGetDigi
 {
     public AbstractIntCmdHolderMono m_value;
 
+
+    private void Reset()
+    {
+         List<MonoBehaviour> test= new List<MonoBehaviour>();
+         GetComponents < MonoBehaviour>(test);
+        if (test.Count == 0 || test.Count == 1) {
+            CreateHolder();
+            CreateRepresentation();
+        }
+
+    }
+
+    [ContextMenu("Create holder")]
+    public void CreateHolder()
+    {
+        m_value= this.gameObject.AddComponent<IntCmdMono>();
+    }
+
+    [ContextMenu("Create holder")]
+    public void CreateRepresentation() {
+        IntCmdMonoRepresentationMono script =  this.gameObject.AddComponent<IntCmdMonoRepresentationMono>();
+        script.SetIntAbstractHolder(m_value);
+
+            }
+
     public UnityEvent<int> m_onValueReceived;
     public override I_IntCmd GetChildrenIntCmd()
     {
@@ -109,12 +134,19 @@ public class IntCmdDigitsWrapperMono : AbstractIntCmdHolderMono, I_IntCmdGetDigi
         }
     }
 
+    public UnityEvent m_onNotifyValueChanged;
+    public override void NotifyChildrenValueChanged()
+    {
+        m_onNotifyValueChanged.Invoke();
+    }
+
     private int m_previous;
 }
 
 
 public abstract class AbstractIntCmdHolderMono : MonoBehaviour, I_IntCmd
 {
+    public abstract void NotifyChildrenValueChanged();
     public abstract I_IntCmd GetChildrenIntCmd();
     public int GetValue()
     {
@@ -129,20 +161,24 @@ public abstract class AbstractIntCmdHolderMono : MonoBehaviour, I_IntCmd
     public void SetNegative()
     {
          GetChildrenIntCmd().SetNegative();
+        NotifyChildrenValueChanged();
     }
 
     public void SetPositive()
     {
          GetChildrenIntCmd().SetPositive();
+        NotifyChildrenValueChanged();
     }
 
     public void SetValue(int value)
     {
         GetChildrenIntCmd().SetValue(value);
+        NotifyChildrenValueChanged();
     }
 
     public void SetValue(I_IntCmdGet value)
     {
         GetChildrenIntCmd().SetValue(value);
+        NotifyChildrenValueChanged();
     }
 }

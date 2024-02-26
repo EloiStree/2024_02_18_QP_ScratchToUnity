@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -39,6 +40,12 @@ public class IntCmdMonoRepresentationMono : MonoBehaviour
     {
         m_intCmd.SetValue(-int.MaxValue);
     }
+
+    public void SetIntAbstractHolder(AbstractIntCmdHolderMono value)
+    {
+        m_intCmd = value;
+    }
+
     [ContextMenu("Switch Sign")]
     public void SwitchSign()
     {

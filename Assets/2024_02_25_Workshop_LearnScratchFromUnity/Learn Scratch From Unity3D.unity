@@ -1,0 +1,4605 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &13377152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 13377153}
+  m_Layer: 0
+  m_Name: Send Command To OMI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &13377153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13377152}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 262406587}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &35090498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 35090499}
+  - component: {fileID: 35090502}
+  - component: {fileID: 35090501}
+  - component: {fileID: 35090500}
+  m_Layer: 0
+  m_Name: 'Commentary: Une gamme de bon project'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &35090499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35090498}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1126537903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &35090500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35090498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7197f2cb20f4b8d41b5a265d48063e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gitHubIssueUrl: https://github.com/EloiStree/HelloRC/issues/11
+  m_issueIndex: 11
+  m_accountName: EloiStree
+  m_projectName: HelloRC
+--- !u!114 &35090501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35090498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Une gamme de bon project
+  m_commentary: 
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &35090502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35090498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!1 &203844586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 203844589}
+  - component: {fileID: 203844588}
+  - component: {fileID: 203844587}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &203844587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203844586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &203844588
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203844586}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &203844589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203844586}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &262406584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8477954460729613531, guid: af1efa1861a239543b175c048a9da63a,
+    type: 3}
+  m_PrefabInstance: {fileID: 313165772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &262406585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262406584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd92d0b22d40054d9a56d188c47ab4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keyObserved: 32
+  m_onKeyPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 262406586}
+        m_TargetAssemblyTypeName: PushIndexIntCmdToUdpMono, Assembly-CSharp
+        m_MethodName: SendUdpMessageAsTwoIntSplitBySpace
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 54654 16546
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onKeyReleased:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 262406586}
+        m_TargetAssemblyTypeName: PushIndexIntCmdToUdpMono, Assembly-CSharp
+        m_MethodName: SendUdpMessageAsTwoIntSplitBySpace
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 54654 0
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &262406586 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8084506482022312406, guid: af1efa1861a239543b175c048a9da63a,
+    type: 3}
+  m_PrefabInstance: {fileID: 313165772}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262406584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfcb8c405792c48469f0a131056b66ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &262406587 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4785705419763567749, guid: af1efa1861a239543b175c048a9da63a,
+    type: 3}
+  m_PrefabInstance: {fileID: 313165772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &313165772
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 13377153}
+    m_Modifications:
+    - target: {fileID: 4785705419763567749, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785705419763567749, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785705419763567749, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785705419763567749, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785705419763567749, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785705419763567749, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785705419763567749, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785705419763567749, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785705419763567749, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785705419763567749, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084506482022312406, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_targetPort
+      value: 8089
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477954460729613531, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      propertyPath: m_Name
+      value: Network IndexIntCmd UDP Local
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8477954460729613531, guid: af1efa1861a239543b175c048a9da63a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 262406585}
+  m_SourcePrefab: {fileID: 100100000, guid: af1efa1861a239543b175c048a9da63a, type: 3}
+--- !u!1 &378097610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 378097611}
+  m_Layer: 0
+  m_Name: Advance book
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &378097611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378097610}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 394834728}
+  - {fileID: 920095952}
+  - {fileID: 1290789496}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &394834727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 394834728}
+  - component: {fileID: 394834731}
+  - component: {fileID: 394834730}
+  - component: {fileID: 394834729}
+  m_Layer: 0
+  m_Name: 'Commentary: Unity Certification'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &394834728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394834727}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 378097611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &394834729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394834727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &394834730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394834727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://docs.google.com/spreadsheets/d/1TI_-X7T4Dh67LKkINNmpfvuofxn3RCUhHVNInaRRUsw/edit?usp=sharing
+--- !u!114 &394834731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394834727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Unity Certification
+  m_commentary: "Apprendre le C# est une chose mais apprendre \xE0 faire des jeux
+    en Unity demande un s\xE9rie de comp\xE9tence. Quand vous voulez pourvez que
+    vous \xEAtes au niveau. Vous pouvez passer une certification (Voir lien)"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!1 &423918889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423918890}
+  - component: {fileID: 423918893}
+  - component: {fileID: 423918892}
+  - component: {fileID: 423918891}
+  m_Layer: 0
+  m_Name: 'Commentary: Unity Certification'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &423918890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423918889}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2104865619}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &423918891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423918889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &423918892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423918889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://docs.google.com/spreadsheets/d/1TI_-X7T4Dh67LKkINNmpfvuofxn3RCUhHVNInaRRUsw/edit?usp=sharing
+--- !u!114 &423918893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423918889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Unity Certification
+  m_commentary: "Apprendre le C# est une chose mais apprendre \xE0 faire des jeux
+    en Unity demande un s\xE9rie de comp\xE9tence. Quand vous voulez pourvez que
+    vous \xEAtes au niveau. Vous pouvez passer une certification (Voir lien)"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!1001 &464400039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 270712411213606429, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 270712411213606429, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 270712411213606429, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 391596380778978428, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: OnTick5Seconds.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451979800806613324, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909165359189057718, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_Name
+      value: Teacher Help Editor Overlayer Game Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273015750535906456, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273015750535906456, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273015750535906456, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258532585803162457, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438831990677944992, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794691522853981880, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794691522853981880, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794691522853981880, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794691522853981880, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1315649813}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b848b8248cebfd468ebcbe786b9bcb0, type: 3}
+--- !u!1 &480444939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 480444940}
+  - component: {fileID: 480444943}
+  - component: {fileID: 480444942}
+  - component: {fileID: 480444941}
+  m_Layer: 0
+  m_Name: 'Commentary: Unity Certification'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &480444940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480444939}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1895861843}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &480444941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480444939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &480444942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480444939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://docs.google.com/spreadsheets/d/1TI_-X7T4Dh67LKkINNmpfvuofxn3RCUhHVNInaRRUsw/edit?usp=sharing
+--- !u!114 &480444943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480444939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Unity Certification
+  m_commentary: "Apprendre le C# est une chose mais apprendre \xE0 faire des jeux
+    en Unity demande un s\xE9rie de comp\xE9tence. Quand vous voulez pourvez que
+    vous \xEAtes au niveau. Vous pouvez passer une certification (Voir lien)"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!1 &536596746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 536596747}
+  - component: {fileID: 536596750}
+  - component: {fileID: 536596749}
+  - component: {fileID: 536596748}
+  m_Layer: 0
+  m_Name: 'Chapter: '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &536596747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536596746}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 920497194}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &536596748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536596746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86deeb1ade135e743b5be015b3e0d0d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: 
+  m_commentary: 
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 0
+--- !u!114 &536596749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536596746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bffcde4cc77d6438720034cb31af0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: 
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &536596750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536596746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!1 &612053369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 612053370}
+  - component: {fileID: 612053373}
+  - component: {fileID: 612053372}
+  - component: {fileID: 612053371}
+  m_Layer: 0
+  m_Name: 'Page:'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &612053370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612053369}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 920497194}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &612053371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612053369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86deeb1ade135e743b5be015b3e0d0d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: 
+  m_commentary: 
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 0
+--- !u!114 &612053372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612053369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d4f5480c221da4cbd204218782abf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: 
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &612053373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612053369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!1 &640981379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 640981380}
+  - component: {fileID: 640981382}
+  - component: {fileID: 640981381}
+  m_Layer: 0
+  m_Name: "Commentary: C# Y a quoi \xE0 apprendre"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &640981380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640981379}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1895861843}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &640981381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640981379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: "C# Y a quoi \xE0 apprendre"
+  m_commentary: "Apprendre le C# est assez rapide. Ce la ne prendre que quelque jour.
+    Mais le maitriser prend des ann\xE9es. \n\n"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &640981382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640981379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!1 &687134545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 687134546}
+  - component: {fileID: 687134547}
+  m_Layer: 0
+  m_Name: 'Chapter: Non trier'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &687134546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687134545}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2140975041}
+  m_Father: {fileID: 920095952}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &687134547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687134545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bffcde4cc77d6438720034cb31af0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: Non trier
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &830426292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 830426294}
+  - component: {fileID: 830426293}
+  m_Layer: 0
+  m_Name: git
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &830426293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830426292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b019678cc98b72b4ca64e5262c0cb2a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targetFolder: C:/Users/elois/Desktop/2024_02_18_QP_ScratchToUnity/Assets
+  m_folderGitIgnore: []
+  m_folderGit:
+  - C:/Users/elois/Desktop/2024_02_18_QP_ScratchToUnity/Assets\2024_02_23_BasicTeacher\.git
+  - C:/Users/elois/Desktop/2024_02_18_QP_ScratchToUnity/Assets\Hide\IntCmd\2024_02_17_IntCmd\.git
+  - C:/Users/elois/Desktop/2024_02_18_QP_ScratchToUnity/Assets\Hide\IntCmd\2024_02_17_IntCmdToCarDroneRC\.git
+  - C:/Users/elois/Desktop/2024_02_18_QP_ScratchToUnity/Assets\Hide\IntCmd\2024_02_21_IndexIntCmd\.git
+  - C:/Users/elois/Desktop/2024_02_18_QP_ScratchToUnity/Assets\Hide\Overlayer\2024_01_22_TransparentWindowOverlay\.git
+  - C:/Users/elois/Desktop/2024_02_18_QP_ScratchToUnity/Assets\Hide\Scratch\2024_02_18_ScratchToUnity\.git
+  - C:/Users/elois/Desktop/2024_02_18_QP_ScratchToUnity/Assets\Hide\Scratch\2024_02_18_ScratchToUnityWorkshops\.git
+  - C:/Users/elois/Desktop/2024_02_18_QP_ScratchToUnity/Assets\Hide\HeRC\Shape\HeRC_CreateYourOwnPack\.git
+  - C:/Users/elois/Desktop/2024_02_18_QP_ScratchToUnity/Assets\Hide\HeRC\Shape\HeRC_ShapeDroneAndCarRC\.git
+--- !u!4 &830426294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830426292}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &920095951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920095952}
+  - component: {fileID: 920095953}
+  m_Layer: 0
+  m_Name: 'Book: I want to teach it but is it too hight level'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &920095952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920095951}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 687134546}
+  m_Father: {fileID: 378097611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &920095953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920095951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0e6d23dcba9e941b921ee99d0df1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bookName: I want to teach it but is it too hight level
+  m_currentPageIndex: 0
+  m_pages: []
+  m_previousPage: {fileID: 0}
+  m_currentPage: {fileID: 0}
+  m_loop: 0
+  m_refreshBookAtAwake: 1
+--- !u!1 &920497193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920497194}
+  - component: {fileID: 920497197}
+  - component: {fileID: 920497196}
+  - component: {fileID: 920497199}
+  - component: {fileID: 920497198}
+  m_Layer: 0
+  m_Name: 'Book: '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &920497194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920497193}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1263578308}
+  - {fileID: 536596747}
+  - {fileID: 1147546979}
+  - {fileID: 612053370}
+  m_Father: {fileID: 1698048296}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &920497196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920497193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24a7336e312c034d96ea25b9bacbb54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &920497197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920497193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0e6d23dcba9e941b921ee99d0df1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bookName: 
+  m_currentPageIndex: 0
+  m_pages:
+  - {fileID: 1263578311}
+  - {fileID: 536596750}
+  - {fileID: 1147546982}
+  - {fileID: 612053373}
+  m_previousPage: {fileID: 0}
+  m_currentPage: {fileID: 0}
+  m_loop: 0
+  m_refreshBookAtAwake: 1
+--- !u!114 &920497198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920497193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5067955d60f24ab429c24b53a6e8b082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_source: {fileID: 920497197}
+  m_timePerSlide: 20
+  m_duration: '1M 20 '
+  m_durationInSeconds: 80
+  m_slideToPlay: 4
+--- !u!114 &920497199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920497193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!1 &961739749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961739753}
+  - component: {fileID: 961739752}
+  - component: {fileID: 961739751}
+  - component: {fileID: 961739750}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &961739750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961739749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
+--- !u!81 &961739751
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961739749}
+  m_Enabled: 1
+--- !u!20 &961739752
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961739749}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &961739753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961739749}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1094408633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1094408634}
+  - component: {fileID: 1094408638}
+  - component: {fileID: 1094408637}
+  - component: {fileID: 1094408636}
+  - component: {fileID: 1094408635}
+  m_Layer: 0
+  m_Name: 'Chapter: Scratch un enfant de Flash ?'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1094408634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094408633}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2023203722}
+  m_Father: {fileID: 1895861843}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1094408635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094408633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5803d3a49baba7e4b8ff681a87e1094c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_projectUrl: https://scratch.mit.edu/projects/639621283/
+  m_projectId: 
+--- !u!114 &1094408636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094408633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86deeb1ade135e743b5be015b3e0d0d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: 
+  m_commentary: "Les avantages de Scratch ce n'est pas \xE7a technique mais son manque
+    d'outils. Moins l'on a de possibilit\xE9e plus la cr\xE9ativit\xE9e \xE9merge.
+    Ainsi que la maitrise de son outil de travail."
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 0
+--- !u!114 &1094408637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094408633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &1094408638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094408633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bffcde4cc77d6438720034cb31af0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: Scratch un enfant de Flash ?
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1126537901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126537903}
+  - component: {fileID: 1126537902}
+  m_Layer: 0
+  m_Name: 'Book: Non trier'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1126537902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126537901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0e6d23dcba9e941b921ee99d0df1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bookName: Non trier
+  m_currentPageIndex: 0
+  m_pages: []
+  m_previousPage: {fileID: 0}
+  m_currentPage: {fileID: 0}
+  m_loop: 0
+  m_refreshBookAtAwake: 1
+--- !u!4 &1126537903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126537901}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 35090499}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1147546978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1147546979}
+  - component: {fileID: 1147546982}
+  - component: {fileID: 1147546981}
+  - component: {fileID: 1147546980}
+  m_Layer: 0
+  m_Name: 'Chapter: '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1147546979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147546978}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 920497194}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1147546980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147546978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86deeb1ade135e743b5be015b3e0d0d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: 
+  m_commentary: 
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 0
+--- !u!114 &1147546981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147546978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bffcde4cc77d6438720034cb31af0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: 
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1147546982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147546978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!1 &1263578307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263578308}
+  - component: {fileID: 1263578311}
+  - component: {fileID: 1263578310}
+  - component: {fileID: 1263578309}
+  m_Layer: 0
+  m_Name: 'Chapter: '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1263578308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263578307}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 920497194}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1263578309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263578307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86deeb1ade135e743b5be015b3e0d0d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: 
+  m_commentary: 
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 0
+--- !u!114 &1263578310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263578307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bffcde4cc77d6438720034cb31af0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: 
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1263578311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263578307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!1 &1290789495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1290789496}
+  - component: {fileID: 1290789497}
+  m_Layer: 0
+  m_Name: 'Book: Unity Certification'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1290789496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290789495}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 378097611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1290789497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290789495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0e6d23dcba9e941b921ee99d0df1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bookName: Unity Certification
+  m_currentPageIndex: 0
+  m_pages: []
+  m_previousPage: {fileID: 0}
+  m_currentPage: {fileID: 0}
+  m_loop: 0
+  m_refreshBookAtAwake: 1
+--- !u!1 &1315649812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1315649813}
+  - component: {fileID: 1315649815}
+  - component: {fileID: 1315649816}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1315649813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315649812}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1480228992}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1315649815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315649812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &1315649816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315649812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+--- !u!4 &1480228992 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3086950441091034422, guid: 0b848b8248cebfd468ebcbe786b9bcb0,
+    type: 3}
+  m_PrefabInstance: {fileID: 464400039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1698048295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1698048296}
+  m_Layer: 0
+  m_Name: Pecha Kucha
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1698048296
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698048295}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 920497194}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1786540736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1786540737}
+  - component: {fileID: 1786540740}
+  - component: {fileID: 1786540739}
+  - component: {fileID: 1786540738}
+  m_Layer: 0
+  m_Name: 'Commentary: Unity Certification'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1786540737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786540736}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2118397439}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1786540738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786540736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &1786540739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786540736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://docs.google.com/spreadsheets/d/1TI_-X7T4Dh67LKkINNmpfvuofxn3RCUhHVNInaRRUsw/edit?usp=sharing
+--- !u!114 &1786540740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786540736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Unity Certification
+  m_commentary: "Apprendre le C# est une chose mais apprendre \xE0 faire des jeux
+    en Unity demande un s\xE9rie de comp\xE9tence. Quand vous voulez pourvez que
+    vous \xEAtes au niveau. Vous pouvez passer une certification (Voir lien)"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!1 &1887707872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1887707873}
+  - component: {fileID: 1887707875}
+  - component: {fileID: 1887707874}
+  m_Layer: 0
+  m_Name: "Commentary: C# Y a quoi \xE0 apprendre"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1887707873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887707872}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2118397439}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1887707874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887707872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: "C# Y a quoi \xE0 apprendre"
+  m_commentary: "Apprendre le C# est assez rapide. Ce la ne prendre que quelque jour.
+    Mais le maitriser prend des ann\xE9es. \n\n"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &1887707875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887707872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!1 &1895861842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1895861843}
+  - component: {fileID: 1895861846}
+  - component: {fileID: 1895861845}
+  - component: {fileID: 1895861844}
+  - component: {fileID: 1895861847}
+  m_Layer: 0
+  m_Name: "Chapter:  Scratch ! La cr\xE9ativit\xE9 avant la technique "
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1895861843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895861842}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2118397439}
+  - {fileID: 1094408634}
+  - {fileID: 640981380}
+  - {fileID: 480444940}
+  m_Father: {fileID: 6283629361818757225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1895861844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895861842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86deeb1ade135e743b5be015b3e0d0d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: 
+  m_commentary: "Les avantages de Scratch ce n'est pas \xE7a technique mais son manque
+    d'outils. Moins l'on a de possibilit\xE9e plus la cr\xE9ativit\xE9e \xE9merge.
+    Ainsi que la maitrise de son outil de travail."
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 0
+--- !u!114 &1895861845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895861842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &1895861846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895861842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bffcde4cc77d6438720034cb31af0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: " Scratch ! La cr\xE9ativit\xE9 avant la technique "
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1895861847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895861842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5803d3a49baba7e4b8ff681a87e1094c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_projectUrl: https://scratch.mit.edu/projects/639621283/
+  m_projectId: 
+--- !u!1 &1906624743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906624744}
+  - component: {fileID: 1906624746}
+  - component: {fileID: 1906624745}
+  m_Layer: 0
+  m_Name: "Commentary: C# Y a quoi \xE0 apprendre"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1906624744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906624743}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2104865619}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1906624745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906624743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: "C# Y a quoi \xE0 apprendre"
+  m_commentary: "Apprendre le C# est assez rapide. Ce la ne prendre que quelque jour.
+    Mais le maitriser prend des ann\xE9es. \n\n"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &1906624746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906624743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!1 &1962895117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1962895118}
+  - component: {fileID: 1962895121}
+  - component: {fileID: 1962895120}
+  - component: {fileID: 1962895119}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1962895118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962895117}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6283629361818757225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1962895119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962895117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5803d3a49baba7e4b8ff681a87e1094c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_projectUrl: https://scratch.mit.edu/projects/971574782/editor/
+  m_projectId: 971574782
+--- !u!114 &1962895120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962895117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: 
+  m_commentary: 
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &1962895121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962895117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!1 &2023203721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023203722}
+  - component: {fileID: 2023203725}
+  - component: {fileID: 2023203724}
+  - component: {fileID: 2023203723}
+  m_Layer: 0
+  m_Name: "Commentary: C'\xE9tait quoi Flash en 2010 ?"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2023203722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023203721}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1094408634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2023203723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023203721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3cd843f041ff054aadda127cd60dbc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_youtubeUrl: 'https://youtu.be/lp8iWwGGlBU '
+  m_youtubeVideoId: lp8iWwGGlBU
+  m_thumbnailType: 0
+--- !u!114 &2023203724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023203721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: "C'\xE9tait quoi Flash en 2010 ?"
+  m_commentary: "Dans les ann\xE9es 2000, vous avions un outil pour faire des jeux
+    vid\xE9os sur internet appel\xE9 Flash. Des miliers de jeux ont \xE9t\xE9 fait
+    dans ce format qui est tr\xE8s proche de Scratch. Cette video peut vous aider
+    \xE0 comprendre la philosophie derri\xE8re Scratch. La cr\xE9ativit\xE9 d'apprendre
+    et d'amuser."
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &2023203725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023203721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!1 &2104865618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2104865619}
+  - component: {fileID: 2104865620}
+  m_Layer: 0
+  m_Name: "Chapter:  C#, un script ? C'est quoi \xE7a ?"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2104865619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104865618}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1906624744}
+  - {fileID: 423918890}
+  m_Father: {fileID: 6283629361818757225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2104865620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104865618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bffcde4cc77d6438720034cb31af0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: " C#, un script ? C'est quoi \xE7a ?"
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2118397438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2118397439}
+  - component: {fileID: 2118397443}
+  - component: {fileID: 2118397442}
+  - component: {fileID: 2118397441}
+  - component: {fileID: 2118397440}
+  m_Layer: 0
+  m_Name: 'Chapter: On peux faire quoi sur Scratch ?'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2118397439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118397438}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1887707873}
+  - {fileID: 1786540737}
+  m_Father: {fileID: 1895861843}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2118397440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118397438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5803d3a49baba7e4b8ff681a87e1094c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_projectUrl: https://scratch.mit.edu/projects/639621283/
+  m_projectId: 
+--- !u!114 &2118397441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118397438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86deeb1ade135e743b5be015b3e0d0d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: 
+  m_commentary: "Les avantages de Scratch ce n'est pas \xE7a technique mais son manque
+    d'outils. Moins l'on a de possibilit\xE9e plus la cr\xE9ativit\xE9e \xE9merge.
+    Ainsi que la maitrise de son outil de travail."
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 0
+--- !u!114 &2118397442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118397438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &2118397443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118397438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bffcde4cc77d6438720034cb31af0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: On peux faire quoi sur Scratch ?
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2140975040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2140975041}
+  - component: {fileID: 2140975042}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2140975041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140975040}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 687134546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2140975042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140975040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7197f2cb20f4b8d41b5a265d48063e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gitHubIssueUrl: https://github.com/EloiStree/HelloRC/issues/1
+  m_issueIndex: 1
+  m_accountName: EloiStree
+  m_projectName: HelloRC
+--- !u!4 &64384686796282083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7465234482200735407}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5982533825170556002}
+  - {fileID: 3096887820114018035}
+  - {fileID: 4544000050412754944}
+  m_Father: {fileID: 4200833098977027373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &127657373916183083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1187754798372334219}
+  - component: {fileID: 7690897240794722397}
+  - component: {fileID: 7347684887799252534}
+  - component: {fileID: 1038419529773374478}
+  m_Layer: 0
+  m_Name: 'Commentary: De la music !'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &149751283310360425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4928161452166744598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36f7ad65497bd14c99248dc324acd19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_textureToShowUrl: https://private-user-images.githubusercontent.com/20149493/305576007-2e5bfd91-ae97-43b6-9434-b79a35a2013c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg4Mjg0MzMsIm5iZiI6MTcwODgyODEzMywicGF0aCI6Ii8yMDE0OTQ5My8zMDU1NzYwMDctMmU1YmZkOTEtYWU5Ny00M2I2LTk0MzQtYjc5YTM1YTIwMTNjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI1VDAyMjg1M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNiODQ4OGIyODdlODJjYTYwNzhlMDZmYzg3YTM1NDJjNTMyMmU1NzllNzgxNmJjZmUwZTM3OTgzODkwOGFmZGEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.506A-7lOYrD8xY1k9Bc69wBlDaUInoBLnGeeis89HOM
+  m_displayType: 0
+--- !u!4 &270046459322888304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8743722435984425889}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5475813182493458367}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &552154522474173896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4928161452166744598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: De la fausse 3D (OoO)
+  m_commentary: "Faut bien comprendre que ce jeu \xE0 \xE9t\xE9 cr\xE9\xE9 \xE0 une
+    \xE9poque ou la 3D existait pas. Et donc oui, c'est r\xE9alisable sur Scratch
+    :)"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!1 &639420263504449128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6059211855706660681}
+  - component: {fileID: 7037523378574187043}
+  - component: {fileID: 7342277010477474593}
+  - component: {fileID: 9025007957379733540}
+  - component: {fileID: 997570269252983335}
+  - component: {fileID: 1485764632890707529}
+  m_Layer: 0
+  m_Name: 'Commentary: De la 3D xD'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &776035269876446545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5465670965731349840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &786003954775280200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013671493175234058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36f7ad65497bd14c99248dc324acd19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_textureToShowUrl: https://private-user-images.githubusercontent.com/20149493/305494713-1511f4a1-e2ce-43c4-a7ab-683de5ba76ae.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg4MjUzMDAsIm5iZiI6MTcwODgyNTAwMCwicGF0aCI6Ii8yMDE0OTQ5My8zMDU0OTQ3MTMtMTUxMWY0YTEtZTJjZS00M2M0LWE3YWItNjgzZGU1YmE3NmFlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI1VDAxMzY0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU5NDg5ODVhMWE3MWE1YjFmYzYwNTkxODVjNGRmNWM4Mzk4MDNiYzk5ZDYwMzMzNzI4Y2FlNGZmMzZhYTQyMTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.yrgcryqYdbQgLcj5TXTZaQNFp8ziV44xWvzunsnWHp8
+  m_displayType: 0
+--- !u!114 &958690403556264419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013671493175234058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Minecraft
+  m_commentary: 
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &997570269252983335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639420263504449128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1158bef50a08ffa4b9808cc834f0350a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_textureToShow: {fileID: 0}
+  m_displayType: 0
+--- !u!114 &1038419529773374478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127657373916183083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://github.com/EloiStree/HelloRC/issues/13
+  - 
+  - 
+  - 
+--- !u!114 &1048833056860065860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109583205306453962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5803d3a49baba7e4b8ff681a87e1094c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_projectUrl: https://scratch.mit.edu/projects/956958488/
+  m_projectId: 
+--- !u!4 &1116872370200949700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969672663693822818}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4200833098977027373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1187754798372334219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127657373916183083}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4200833098977027373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1190319211668227393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5465670965731349840}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5475813182493458367}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1373428377651970639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013671493175234058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://github.com/EloiStree/HelloRC/issues/11#issue-2137633910
+  - 
+  - 
+  - 
+--- !u!114 &1398972682781289295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626424008317855275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bffcde4cc77d6438720034cb31af0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: " C#, un script ? C'est quoi \xE7a ?"
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1485764632890707529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639420263504449128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3cd843f041ff054aadda127cd60dbc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_youtubeUrl: www.youtube.com/watch?v=dQw4w9WgXcQ
+  m_youtubeVideoId: dQw4w9WgXcQ
+  m_thumbnailType: 0
+--- !u!1 &1513353623300623601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3096887820114018035}
+  - component: {fileID: 1799618146429185672}
+  - component: {fileID: 6325623565474410555}
+  - component: {fileID: 7256665023963129245}
+  m_Layer: 0
+  m_Name: 'Commentary: Beethoven'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1799618146429185672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513353623300623601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Beethoven
+  m_commentary: Ce jeu est excellent et inatendu :)
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &1981046941260267971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5605845947916044519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 816fa67985f559644bba3294f1ed6cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_textForGeneration: "\rLes \xE9tapes de l'atelier :\r\n- Apprendre ce qu'est Scratch\r\n 
+    - On peut faire quoi avec Scratch ?\r\n  - Faire bouger un crabe ?\r\n  - Les
+    collisions avec le couleur ?\r\n  - Devenir un Scratcher\r\n  - C'est quoi un
+    Cloud Var ?\r\n- D\xE9couvrir Unity\r\n  - T\xE9l\xE9charger et ouvrir un projet
+    Unity3D\r\n  - D\xE9couvrir ce qu'est un projet Unity\r\n  - Faire un cube qui
+    bouge\r\n    - C'est quoi un boolean\r\n    - C'est quoi un \xE9v\xE8nement ?\r\n   
+    - Apprendre \xE0 envoyer un \xE9v\xE8nement\r\n    - C'est quoi un Transform
+    et un GameObject\r\n    - Bouger et tourner un cube\r\n  - Devenir d\xE9veloppeur\r\n   
+    - Builder l'application pour une surprise\r\n    - Les overlays :)\r\n  - Apprendre
+    \xE0 bouger\r\n    - \xC9couter les touches du clavier\r\n    - \xC9couter \xE0
+    la manette Xbox\r\n    - Jouer \xE0 deux selon le contexte\r\n    - Mon cube
+    ne bouge pas quand je l'exporte\r\n      - On Mouse Over ?\r\n      - Utiliser
+    un key logger ?\r\n    - On est deux, on pourrait pas jouer ensemble ?\r\n     
+    - Utiliser une DLL XInput ?\r\n    - Je joue comme un pied ? Pourquoi pas :)\r\n     
+    - Comment faire ses propres manettes pour jouer avec les pieds\r\n    - On est
+    deux dans un espace carr\xE9 et on joue avec nos pieds :) On pourrait se faire
+    un foot.\r\n      - Mettre une balle et un sol\r\n      - Mettre des murs invisibles
+    pour ne pas sortir du terrain\r\n    - Pourquoi avoir choisi une application
+    Overlay ?\r\n      - D\xE9tecter une collision avec de la couleur :)\r\n     
+    - Replacer la voiture \xE0 une position quand on touche la couleur rouge\r\n     
+    - Compter les points quand la balle touche une couleur.\r\n      - Faire du level
+    design avec Paint / Krita\r\n      - [Any Radiance](https://youtu.be/WCANBhAbt_E?t=1001)
+    en Scratch :)\r\n- Y aurait-il moyen d'avoir autre chose que des cubes et des
+    pixels ?\r\n  - D\xE9j\xE0 c'est quoi un cube ?\r\n  - Comment habiller un cube
+    ?\r\n  - Comment faire des roues ?\r\n  - Donner de la couleur ?\r\n  - Donner
+    du volume ?\r\n  - Donner de la texture ?\r\n  - Un peu de lumi\xE8re et de la
+    fum\xE9e :)\r\n  - Tu parles de mat\xE9riaux et de shaders... C'est quoi la diff\xE9rence
+    ?\r\n  - Shader graph ?\r\n  - No code ?\r\n  - PlayMaker ?\r\n  - L'asset store
+    ?\r\n  - Exporter cette voiture ?\r\n- Y a-t-il des chiffres au-dessus de l'\xE9cran,
+    c'est quoi ?\r\n  - Un int quoi ? Une commande ?\r\n  - C'est quoi du binaire
+    ?\r\n  - Langage machine ?\r\n  - Pourquoi apprendre \xE7a ?\r\n  - Le Code c'est
+    magique litt\xE9ralement.\r\n    - C'est quoi de l'UDP ?\r\n    - C'est quoi
+    un Webserver ?\r\n    - C'est quoi un HC06 et TTL ?\r\n    - Jouer de la musique
+    ensemble sur un champ de bataille\r\n    - Faire chauffer les moteurs :)\r\n 
+    - Mais du coup, on pourrait faire un match de foot \xE0 8 joueurs :o\r\n- Envoyer
+    deux nombres sur un autre ordinateur\r\n  - Utiliser du code pr\xE9par\xE9 pour
+    vous\r\n  - Utiliser IntCmd et IntCmd Wrapper\r\n  - Utiliser l'IndexIntCmd et
+    son singleton.\r\n  - Attends, on peut bouger notre voiture sur un autre ordinateur
+    ?\r\n    - Comment fait-on pour exporter ma voiture sur le jeu ?\r\n      - Exporter
+    un unity package en fichier.\r\n- Ok vous arrivez \xE0 bouger des voitures sur
+    mon \xE9cran... vous voulez voir ce que \xE7a donne en r\xE9alit\xE9 virtuelle
+    :)\r\n  - C'est quoi la r\xE9alit\xE9 virtuelle ?\r\n  - C'est quoi la r\xE9alit\xE9
+    augment\xE9e ?\r\n  - C'est quoi un Quest 1-2-3 ?\r\n  - Let's fight :)\r\n-
+    Ok il nous reste un peu de temps\r\n  - \xC7a vous dit de faire voler un drone
+    ?\r\n"
+  m_linePerLine:
+  - "\rLes \xE9tapes de l'atelier :\r"
+  - "- Apprendre ce qu'est Scratch\r"
+  - "  - On peut faire quoi avec Scratch ?\r"
+  - "  - Faire bouger un crabe ?\r"
+  - "  - Les collisions avec le couleur ?\r"
+  - "  - Devenir un Scratcher\r"
+  - "  - C'est quoi un Cloud Var ?\r"
+  - "- D\xE9couvrir Unity\r"
+  - "  - T\xE9l\xE9charger et ouvrir un projet Unity3D\r"
+  - "  - D\xE9couvrir ce qu'est un projet Unity\r"
+  - "  - Faire un cube qui bouge\r"
+  - "    - C'est quoi un boolean\r"
+  - "    - C'est quoi un \xE9v\xE8nement ?\r"
+  - "    - Apprendre \xE0 envoyer un \xE9v\xE8nement\r"
+  - "    - C'est quoi un Transform et un GameObject\r"
+  - "    - Bouger et tourner un cube\r"
+  - "  - Devenir d\xE9veloppeur\r"
+  - "    - Builder l'application pour une surprise\r"
+  - "    - Les overlays :)\r"
+  - "  - Apprendre \xE0 bouger\r"
+  - "    - \xC9couter les touches du clavier\r"
+  - "    - \xC9couter \xE0 la manette Xbox\r"
+  - "    - Jouer \xE0 deux selon le contexte\r"
+  - "    - Mon cube ne bouge pas quand je l'exporte\r"
+  - "      - On Mouse Over ?\r"
+  - "      - Utiliser un key logger ?\r"
+  - "    - On est deux, on pourrait pas jouer ensemble ?\r"
+  - "      - Utiliser une DLL XInput ?\r"
+  - "    - Je joue comme un pied ? Pourquoi pas :)\r"
+  - "      - Comment faire ses propres manettes pour jouer avec les pieds\r"
+  - "    - On est deux dans un espace carr\xE9 et on joue avec nos pieds :) On pourrait
+    se faire un foot.\r"
+  - "      - Mettre une balle et un sol\r"
+  - "      - Mettre des murs invisibles pour ne pas sortir du terrain\r"
+  - "    - Pourquoi avoir choisi une application Overlay ?\r"
+  - "      - D\xE9tecter une collision avec de la couleur :)\r"
+  - "      - Replacer la voiture \xE0 une position quand on touche la couleur rouge\r"
+  - "      - Compter les points quand la balle touche une couleur.\r"
+  - "      - Faire du level design avec Paint / Krita\r"
+  - "      - [Any Radiance](https://youtu.be/WCANBhAbt_E?t=1001) en Scratch :)\r"
+  - "- Y aurait-il moyen d'avoir autre chose que des cubes et des pixels ?\r"
+  - "  - D\xE9j\xE0 c'est quoi un cube ?\r"
+  - "  - Comment habiller un cube ?\r"
+  - "  - Comment faire des roues ?\r"
+  - "  - Donner de la couleur ?\r"
+  - "  - Donner du volume ?\r"
+  - "  - Donner de la texture ?\r"
+  - "  - Un peu de lumi\xE8re et de la fum\xE9e :)\r"
+  - "  - Tu parles de mat\xE9riaux et de shaders... C'est quoi la diff\xE9rence ?\r"
+  - "  - Shader graph ?\r"
+  - "  - No code ?\r"
+  - "  - PlayMaker ?\r"
+  - "  - L'asset store ?\r"
+  - "  - Exporter cette voiture ?\r"
+  - "- Y a-t-il des chiffres au-dessus de l'\xE9cran, c'est quoi ?\r"
+  - "  - Un int quoi ? Une commande ?\r"
+  - "  - C'est quoi du binaire ?\r"
+  - "  - Langage machine ?\r"
+  - "  - Pourquoi apprendre \xE7a ?\r"
+  - "  - Le Code c'est magique litt\xE9ralement.\r"
+  - "    - C'est quoi de l'UDP ?\r"
+  - "    - C'est quoi un Webserver ?\r"
+  - "    - C'est quoi un HC06 et TTL ?\r"
+  - "    - Jouer de la musique ensemble sur un champ de bataille\r"
+  - "    - Faire chauffer les moteurs :)\r"
+  - "  - Mais du coup, on pourrait faire un match de foot \xE0 8 joueurs :o\r"
+  - "- Envoyer deux nombres sur un autre ordinateur\r"
+  - "  - Utiliser du code pr\xE9par\xE9 pour vous\r"
+  - "  - Utiliser IntCmd et IntCmd Wrapper\r"
+  - "  - Utiliser l'IndexIntCmd et son singleton.\r"
+  - "  - Attends, on peut bouger notre voiture sur un autre ordinateur ?\r"
+  - "    - Comment fait-on pour exporter ma voiture sur le jeu ?\r"
+  - "      - Exporter un unity package en fichier.\r"
+  - "- Ok vous arrivez \xE0 bouger des voitures sur mon \xE9cran... vous voulez voir
+    ce que \xE7a donne en r\xE9alit\xE9 virtuelle :)\r"
+  - "  - C'est quoi la r\xE9alit\xE9 virtuelle ?\r"
+  - "  - C'est quoi la r\xE9alit\xE9 augment\xE9e ?\r"
+  - "  - C'est quoi un Quest 1-2-3 ?\r"
+  - "  - Let's fight :)\r"
+  - "- Ok il nous reste un peu de temps\r"
+  - "  - \xC7a vous dit de faire voler un drone ?\r"
+  - 
+  m_pagePrefab: {fileID: 0}
+  m_whereToBuild: {fileID: 0}
+--- !u!114 &2224844259256734441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4928161452166744598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &2505816591534662712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8743722435984425889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: "C# Y a quoi \xE0 apprendre"
+  m_commentary: "Apprendre le C# est assez rapide. Ce la ne prendre que quelque jour.
+    Mais le maitriser prend des ann\xE9es. \n\n"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &2532804186394138512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109583205306453962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &2572685965706720119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251270652900560773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd92d0b22d40054d9a56d188c47ab4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keyObserved: 111
+  m_onKeyPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7121347948786657803}
+        m_TargetAssemblyTypeName: BasicTeacherMono_Book, Assembly-CSharp
+        m_MethodName: NextPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onKeyReleased:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &2583941716696098412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4544000050412754944}
+  - component: {fileID: 3598880604268390794}
+  - component: {fileID: 3987782501108184053}
+  - component: {fileID: 3556528859364440502}
+  m_Layer: 0
+  m_Name: 'Commentary: Small little games'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2788942870400234699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969672663693822818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &2928104913286544507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8850748417722289189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bffcde4cc77d6438720034cb31af0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: ' Scratch c''est fou :)'
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2969672663693822818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1116872370200949700}
+  - component: {fileID: 4438089733054552027}
+  - component: {fileID: 2788942870400234699}
+  m_Layer: 0
+  m_Name: 'Commentary: Des logiciels'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &3021776006630868038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013671493175234058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!4 &3096887820114018035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513353623300623601}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 64384686796282083}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3251270652900560773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6283629361818757225}
+  - component: {fileID: 7121347948786657803}
+  - component: {fileID: 2572685965706720119}
+  - component: {fileID: 6931881393338210832}
+  m_Layer: 0
+  m_Name: 'Book: C''est quoi Scratch ?'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &3493824878300774274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4928161452166744598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://github.com/EloiStree/HelloRC/issues/19
+--- !u!114 &3556528859364440502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583941716696098412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://github.com/EloiStree/HelloRC/issues/11#issuecomment-1948634721
+  - 
+  - 
+  - 
+--- !u!114 &3598880604268390794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583941716696098412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Small little games
+  m_commentary: Il y a beaucoup de petits jeux en tous genre.
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!1 &3626424008317855275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5475813182493458367}
+  - component: {fileID: 1398972682781289295}
+  m_Layer: 0
+  m_Name: "Chapter:  C#, un script ? C'est quoi \xE7a ?"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &3956437764576608201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5137001355105086040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d4f5480c221da4cbd204218782abf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_title: On peu faire quoi avec scratch ?
+  m_events:
+    m_onFocus:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusExit:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &3987782501108184053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583941716696098412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &4036647536444786825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5465670965731349840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://docs.google.com/spreadsheets/d/1TI_-X7T4Dh67LKkINNmpfvuofxn3RCUhHVNInaRRUsw/edit?usp=sharing
+--- !u!4 &4200833098977027373
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5137001355105086040}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 64384686796282083}
+  - {fileID: 1187754798372334219}
+  - {fileID: 1116872370200949700}
+  - {fileID: 5988745214994724614}
+  - {fileID: 9019631505914653065}
+  - {fileID: 6059211855706660681}
+  - {fileID: 7133891304236230078}
+  m_Father: {fileID: 8056931132720714903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4375135798026558991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109583205306453962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://github.com/EloiStree/HelloRC/issues/11#issuecomment-1948774936
+  - 
+  - 
+  - 
+--- !u!114 &4438089733054552027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969672663693822818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Des logiciels
+  m_commentary: "Comment \xE7a va vous"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!4 &4544000050412754944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583941716696098412}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 64384686796282083}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4824735448717753857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5465670965731349840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Unity Certification
+  m_commentary: "Apprendre le C# est une chose mais apprendre \xE0 faire des jeux
+    en Unity demande un s\xE9rie de comp\xE9tence. Quand vous voulez pourvez que
+    vous \xEAtes au niveau. Vous pouvez passer une certification (Voir lien)"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!1 &4928161452166744598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9019631505914653065}
+  - component: {fileID: 2224844259256734441}
+  - component: {fileID: 552154522474173896}
+  - component: {fileID: 3493824878300774274}
+  - component: {fileID: 149751283310360425}
+  m_Layer: 0
+  m_Name: 'Commentary: De la fausse 3D (OoO)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &4937049683919830580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8743722435984425889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &4948867402167841679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8370072838690848367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://github.com/EloiStree/HelloRC/issues/23
+--- !u!114 &4956365553270699973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7465234482200735407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://github.com/EloiStree/HelloRC/issues/19
+  - 
+  - 
+  - 
+--- !u!1 &5137001355105086040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4200833098977027373}
+  - component: {fileID: 3956437764576608201}
+  m_Layer: 0
+  m_Name: Page:On peu faire quoi avec scratch ?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &5381582142994361111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7465234482200735407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Des jeux :)
+  m_commentary: "Comment \xE7a va vous"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!1 &5465670965731349840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1190319211668227393}
+  - component: {fileID: 4824735448717753857}
+  - component: {fileID: 4036647536444786825}
+  - component: {fileID: 776035269876446545}
+  m_Layer: 0
+  m_Name: 'Commentary: Unity Certification'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5475813182493458367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626424008317855275}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 270046459322888304}
+  - {fileID: 1190319211668227393}
+  m_Father: {fileID: 6283629361818757225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5605845947916044519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9055189954359976041}
+  - component: {fileID: 1981046941260267971}
+  m_Layer: 0
+  m_Name: Construction du cours
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5982533825170556002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013671493175234058}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 64384686796282083}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &5988745214994724614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109583205306453962}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4200833098977027373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6059211855706660681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639420263504449128}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4200833098977027373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6109583205306453962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5988745214994724614}
+  - component: {fileID: 8960092149550598657}
+  - component: {fileID: 2532804186394138512}
+  - component: {fileID: 4375135798026558991}
+  - component: {fileID: 1048833056860065860}
+  m_Layer: 0
+  m_Name: 'Commentary: Des blagues ^^'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6283629361818757225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251270652900560773}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1962895118}
+  - {fileID: 8056931132720714903}
+  - {fileID: 5475813182493458367}
+  - {fileID: 1895861843}
+  - {fileID: 2104865619}
+  m_Father: {fileID: 9055189954359976041}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6325623565474410555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513353623300623601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &6536688995944786420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8370072838690848367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &6821708216465339597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8370072838690848367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Des jeux en 4D !!!
+  m_commentary: 'Je vous jure que je ne vous laisserai pas tomber sur ce sujet. '
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &6931881393338210832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251270652900560773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd92d0b22d40054d9a56d188c47ab4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keyObserved: 112
+  m_onKeyPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7121347948786657803}
+        m_TargetAssemblyTypeName: BasicTeacherMono_Book, Assembly-CSharp
+        m_MethodName: NextPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onKeyReleased:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &7013671493175234058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5982533825170556002}
+  - component: {fileID: 958690403556264419}
+  - component: {fileID: 3021776006630868038}
+  - component: {fileID: 786003954775280200}
+  - component: {fileID: 1373428377651970639}
+  m_Layer: 0
+  m_Name: 'Commentary: Minecraft'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &7037523378574187043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639420263504449128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &7121347948786657803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251270652900560773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0e6d23dcba9e941b921ee99d0df1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bookName: C'est quoi Scratch ?
+  m_currentPageIndex: 0
+  m_pages: []
+  m_previousPage: {fileID: 0}
+  m_currentPage: {fileID: 0}
+  m_loop: 0
+  m_refreshBookAtAwake: 1
+--- !u!4 &7133891304236230078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8370072838690848367}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4200833098977027373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7256665023963129245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513353623300623601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://scratch.mit.edu/projects/377987323
+  - 
+  - 
+  - 
+--- !u!114 &7342277010477474593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639420263504449128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: De la 3D xD
+  m_commentary: Vous connaissez cette video ?
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &7347684887799252534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127657373916183083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!114 &7363630971176886289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7465234482200735407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36f7ad65497bd14c99248dc324acd19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_textureToShowUrl: https://www.gamebrew.org/images/c/ca/Wolfenstein3d.png
+  m_displayType: 0
+--- !u!1 &7465234482200735407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 64384686796282083}
+  - component: {fileID: 5381582142994361111}
+  - component: {fileID: 7908220680309498514}
+  - component: {fileID: 7363630971176886289}
+  - component: {fileID: 4956365553270699973}
+  m_Layer: 0
+  m_Name: 'Commentary: Des jeux :)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &7690897240794722397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127657373916183083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: De la music !
+  m_commentary: "Comment \xE7a va vous"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!114 &7699728286565348823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8370072838690848367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3cd843f041ff054aadda127cd60dbc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_youtubeUrl: www.youtube.com/watch?v=dQw4w9WgXcQ
+  m_youtubeVideoId: dQw4w9WgXcQ
+  m_thumbnailType: 0
+--- !u!114 &7908220680309498514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7465234482200735407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf1165c041aab54d9e6208c2b4a5694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggle:
+    m_onFocusEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusLost:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onFocusEnterBlock: []
+    m_onFocusLostBlock: []
+    m_forceCoroutineUse: 0
+--- !u!4 &8056931132720714903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8850748417722289189}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4200833098977027373}
+  m_Father: {fileID: 6283629361818757225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8370072838690848367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7133891304236230078}
+  - component: {fileID: 6536688995944786420}
+  - component: {fileID: 6821708216465339597}
+  - component: {fileID: 4948867402167841679}
+  - component: {fileID: 7699728286565348823}
+  m_Layer: 0
+  m_Name: 'Commentary: Des jeux en 4D !!!'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &8743722435984425889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270046459322888304}
+  - component: {fileID: 4937049683919830580}
+  - component: {fileID: 2505816591534662712}
+  m_Layer: 0
+  m_Name: "Commentary: C# Y a quoi \xE0 apprendre"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &8850748417722289189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8056931132720714903}
+  - component: {fileID: 2928104913286544507}
+  m_Layer: 0
+  m_Name: 'Chapter:  Scratch c''est fou :)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &8960092149550598657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109583205306453962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc5d1119e296e489b3bbae62449d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keywords: Des blagues ^^
+  m_commentary: "Comment \xE7a va vous"
+  m_moreAboutit:
+    m_quickText: 
+    m_permanentFile: {fileID: 0}
+    m_asMarkdownOnTheWeb: 
+  m_editObjectName: 1
+--- !u!4 &9019631505914653065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4928161452166744598}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4200833098977027373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9025007957379733540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639420263504449128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e975bb155e8d94b9fe8b8e61a987a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_proposedUrls:
+  - https://github.com/EloiStree/HelloRC/issues/23
+--- !u!4 &9055189954359976041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5605845947916044519}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6283629361818757225}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 464400039}
+  - {fileID: 961739753}
+  - {fileID: 203844589}
+  - {fileID: 9055189954359976041}
+  - {fileID: 378097611}
+  - {fileID: 1126537903}
+  - {fileID: 1698048296}
+  - {fileID: 13377153}
+  - {fileID: 830426294}

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class IndexIntCmdBroadcastMono : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class IndexIntCmdBroadcastMono : MonoBehaviour
 
     public IndexIntCmdUnityEvent.InterfaceGet m_onIntCmdReceivedInterface;
     public IndexIntCmdUnityEvent.Int m_onIntCmdReceivedInt;
+    public UnityEvent<int, int> m_onIndexCommandInt;
 
     private void Awake()
     {
@@ -58,6 +60,8 @@ public class IndexIntCmdBroadcastMono : MonoBehaviour
     private void BroadcastReceived(I_IndexIntCmdGet intCommandInterface)
     {
         m_onIntCmdReceivedInterface.Invoke(intCommandInterface);
+        if(intCommandInterface!=null)
+        m_onIndexCommandInt.Invoke(intCommandInterface.GetIndexInt(), intCommandInterface.GetCommandInt());
     }
     private void BroadcastReceived(int intCommand)
     {

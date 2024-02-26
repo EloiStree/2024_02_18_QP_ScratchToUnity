@@ -21,8 +21,14 @@ public class IntCmdPlayerSingletonMono
     }
     private void Update()
     {
+        CheckForChanged();
+    }
+
+    private void CheckForChanged()
+    {
         m_currentValue = GetChildrenIntCmd().GetValue();
-        if (m_currentValue != m_previousValue) {
+        if (m_currentValue != m_previousValue)
+        {
             m_previousValue = m_currentValue;
             m_onValueChanged.Invoke(GetChildrenIntCmd());
         }
@@ -38,6 +44,12 @@ public class IntCmdPlayerSingletonMono
         IntCmdPlayerSingleton.NotifyPossibleChanged();
     }
     public void SetWith(I_IndexIntCmdGet value) { IntCmdPlayerSingleton.GetPlayer().SetValue(value.GetIndexInt()); }
+
+    public override void NotifyChildrenValueChanged()
+    {
+        CheckForChanged();
+
+    }
 }
 
 

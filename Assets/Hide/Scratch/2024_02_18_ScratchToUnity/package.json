@@ -1,11 +1,11 @@
 
 {                                                                                
-  "name": "be.eloistree.scratch2unity",                              
-  "displayName": "Scratch 2 Unity",                        
+  "name": "be.eloistree.scratchtounity",                              
+  "displayName": "Scratch To Unity",                        
   "version": "0.0.1",                         
   "unity": "2018.1",                             
   "unityRelease": "",                             
-  "description": "Attempt to mirror Scratch logic and architecture in Unity3D in aim to ease the communication between both and ease the transition from Scratch to Unity with students.",                         
+  "description": "Toolboxes that mirro scratch to teach how to go from scratch to unity. Also very useful as a tool to work in deed.",                         
   "keywords": ["Script","Tool"],                       
   "dependencies":{},     
   "relatedPackages":{},     
